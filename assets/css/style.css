@@ -38,22 +38,31 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     max-width: 880px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .intro__title {
     color: #ffffff;
-    font-size: 150px;
+    font-size: 130px;
     font-weight: 700;
     text-transform: uppercase;
-    text-align: center;
     line-height: 1;
 }
 
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 60px auto   ;
+    background-color: #ffffff;
+}
+
 .intro__subtitle {
+    margin-bottom: 20px;
     font-size: 72px;
     color: #ffffff;
     font-family: 'Kaushan Script', cursive;
-    text-align: center;
 }
 
 /* Header */
@@ -115,4 +124,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav__link:hover:after {
     opacity: 1;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+    border: 3px solid #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #333;
 }
